@@ -1,0 +1,53 @@
+The different types of errors:-
+1) Error in syntax 
+   * not closing enclosing the block propery.
+   * not ending the executable statement with ;.
+   * writing an executable or expression outside a method.
+   * Not writing the keyword in smallcase.
+   * Not writing the predefined classes in proper case.
+   * accessing the non static member from static block.
+   * restricting the access specefier of the overriding method.
+   * we wrote a method with return type but not returning a value.
+   * not writing the super keyword to access the base class
+     constructor in the first line.
+   * not writing the this keyword as a part of constructor call
+     as a first line.
+   * Accessing a private member outside the class.
+   * when a class is public . The file name and class name 
+     should be same.
+-------------------------------------------------------------------------------------------
+2) Error in Logic. 
+   * We are expecting an output that is different from the actual output. 
+   * Writing testcases to test the code.
+   * Debugger to find where the challenge is with the code. 
+-----------------------------------------------------------------------------------
+3) Error during the runtime/execution of the code======> Exception
+
+package com.infosys.exception.demo1;
+
+/*
+ * Before exception
+ * Exception in thread "main" java.lang.ArithmeticException: / by zero
+at com.infosys.exception.demo1.ExceptionDemo.divide(ExceptionDemo.java:4)
+at com.infosys.exception.demo1.ExceptionDemo.main(ExceptionDemo.java:9)*/
+public class ExceptionDemo {
+       public static void divide(int number1, int number2) {
+    	     System.out.println("Before exception");
+              int quotient = number1/number2;
+              System.out.println("After exception");
+              System.out.println(quotient);
+       }
+ 
+       public static void main(String args[]) {
+              divide(10, 0);
+       }
+}
+// If the exception occurs in the code, program stops working abruptly.
+// Rest of the lines wont execute.
+------------------------------------------------------------------------------------------
+Checked Exception: Are checked during the compilation time. Whether we have taken the mesures
+handling the exception.
+Unchecked Exception : No need to take care of exception handling.
+
+   
+   
